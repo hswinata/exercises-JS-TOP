@@ -25,4 +25,12 @@ const removeFromArray = function (array, ...args) {
 // }
 //
 
+//Solution 3: using splice and indexOf:
+const removeFromArray = function(myArray, remove) {
+    myArray.splice(myArray.indexOf(remove), 1);
+    return myArray;
+};
+
+removeFromArray([1, 2, 3, 4], 3);
+
 module.exports = removeFromArray;
